@@ -5,6 +5,12 @@ button.addEventListener('click', function () {
     const numbermax = parseInt(document.querySelector(".max-number").value);
 
 
+    if ( numbermax < numbermin ){ 
+        
+     alert ("numero minimo deve ser maior que numero max")
+
+}
+
     let result = Math.floor(Math.random() * (numbermax - numbermin + 1)) + numbermin
 
     document.querySelector("#result > span").textContent = result
